@@ -2,7 +2,11 @@
 #include <stdlib.h>
 #include <lab8.h>
 
-// Necessary helper
+#define N 2
+
+int a[] = {1, 2};
+int b[] = {2, 3};
+int *c;
 
 int add(int i, int j)
 {
@@ -11,7 +15,6 @@ int add(int i, int j)
 
 void i()
 {
-    // Create the array
     c = malloc(N * sizeof(int));
 
     // Run "m" (map) with add

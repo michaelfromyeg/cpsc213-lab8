@@ -3,7 +3,9 @@
 #include <stdlib.h>
 #include <lab8.h>
 
-// Necessary helper
+// Pretend sums
+int fake_c[] = {3, 5};
+int mx;
 
 int maxf(int i, int j)
 {
@@ -13,7 +15,7 @@ int maxf(int i, int j)
 // Store max value of d (should be c) in mx
 void ii()
 {
-    mx = r(maxf, fake_c, N, INT_MIN);
+    mx = r(maxf, fake_c, sizeof(fake_c) / sizeof(fake_c[0]), INT_MIN);
     printf("mx = %d\n", mx);
 }
 
