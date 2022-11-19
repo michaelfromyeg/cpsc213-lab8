@@ -11,9 +11,24 @@ int *o;
 int eSize;
 int oSize;
 
+int isOddOrEven(int a, int p)
+{
+    return a % 2 == p;
+    // a % 2 == 0 is even
+    // a % 2 == 1 is odd
+    // p should only be 0 or 1!
+}
+
 void iii()
 {
-    // TODO
+    e = malloc(N * sizeof(int));
+    o = malloc(N * sizeof(int));
+
+    int n_even = fi(isOddOrEven, a, e, N, 0);
+    int n_odd = fi(isOddOrEven, b, o, N, 1);
+
+    printArray(e, n_even);
+    printArray(o, n_odd);
 }
 
 int main()

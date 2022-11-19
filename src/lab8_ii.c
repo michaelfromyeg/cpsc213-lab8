@@ -9,9 +9,16 @@
 int fake_c[] = {3, 5};
 int mx;
 
+int max(int a, int b)
+{
+    return a > b ? a : b;
+}
+
 void ii()
 {
-    // TODO
+    mx = r(max, fake_c, N, INT_MIN);
+
+    printf("mx = %d\n", mx);
 }
 
 int main()

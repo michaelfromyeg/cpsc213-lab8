@@ -11,9 +11,18 @@ int fake_o[] = {3};
 
 int mn;
 
+int min(int a, int b)
+{
+    return a < b ? a : b;
+}
+
 void iv()
 {
-    // TODO
+    int eMin = r(min, fake_e, N, INT_MAX);
+    int oMin = r(min, fake_o, N, INT_MAX);
+
+    mn = min(eMin, oMin);
+    printf("mn = %d\n", mn);
 }
 
 int main()
